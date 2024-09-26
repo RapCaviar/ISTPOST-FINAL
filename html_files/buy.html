@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Now</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="../style_files/buy.css">
+</head>
+<body class="VAGSH">
+  <div class="header">
+    <!-- Logo image -->
+    <img width="110px" src="../image_assets/logo.png" alt="Logo"> 
+    <!-- Navigation buttons -->
+    <div class="button-container">
+        <button class="buttonX">
+            <a href="index.html" class="buttonX">Home Page</a>
+        </button> 
+        <button class="buttonX">
+            <a href="aditya.html" class="buttonX">Computer Defender</a>
+        </button> 
+        <button class="buttonX">
+            <a href="dinel.html" class="buttonX">Velocity Rush</a>
+        </button> 
+        <button class="buttonX">
+            <a href="rishit.html" class="buttonX">Batting Simulator</a>
+        </button> 
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="container">
+    <!-- Images for the games -->
+    <img src="../image_assets/image1.jpg" class="imageZ" id="image1">
+    <img src="../image_assets/image2.jpg" class="imageZ" id="image2">
+    <img src="../image_assets/image3.jpg" class="imageZ" id="image3">
+    <br><br><br><br>
+    <div class="containerV">
+      <!-- Game selection form -->
+      <h1>Choose a Game to Purchase</h1>
+      <form id="game-selection-form">
+        <label for="games">Proceed to Checkout:</label>
+        <select id="games" name="games">
+          <option value="velocity-rush">Velocity Rush</option>
+          <option value="computer-defender">Computer Defender</option>
+          <option value="batting-simulator">Batting Simulator</option>
+        </select>
+        <button type="button" onclick="showPaymentForm()">Choose a game</button>
+      </form>
+    </div>
+    
+    <div id="payment-form" style="display: none;">
+      <!-- Payment information form -->
+      <h2>Enter Payment Information</h2>
+      <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;">
+        <div id="game-details" style="flex: 1;">
+          <!-- Game details will be inserted here -->
+        </div>
+        <form style="flex: 2;">
+          <label for="cardholder-name">Cardholder Name:</label>
+          <input type="text" id="cardholder-name" name="cardholder-name"><br><br>
+          <label for="credit-card-number">Credit Card Number:</label>
+          <input type="text" id="credit-card-number" name="credit-card-number"><br><br>
+          <label for="expiry-date">Expiry Date:</label>
+          <input type="date" id="expiry-date" name="expiry-date"><br><br>
+          <label for="cvc">CVC:</label>
+          <input type="text" id="cvc" name="cvc"><br><br>
+          <button type="submit">Pay Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="game-name"></h2>
+  <p id="game-price"></p>
+  
+  <script src="../script_files/script4.js">
+    // Retrieve saved values from local storage
+  </script>
+  
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <!-- Footer logo and contact information -->
+        <img width="110px" src="../image_assets/logo.png" alt="Logo"> 
+        <p><strong>RAD STUDIOS</strong></p>
+        <p>Penrith High School</p>
+        <p>Phone: (123) 456-7890 | Email: <a href="mailto:RADSTUDIOS@company.com">RADSTUDIOS@company.com</a></p>
+      </div>
+      <div class="footer-links">
+        <!-- Quick links to other pages -->
+        <p><strong>Quick Links</strong></p>
+        <ul>
+          <li><a href="dinel.html">Velocity Rush</a></li>
+          <li><a href="aditya.html">Computer Defender</a></li>
+          <li><a href="#">Batting Simulator</a></li>
+        </ul>
+      </div>
+      <div class="footer-elms">
+        <!-- Decorative fire GIFs -->
+        <div class="fire-gifs left">
+          <img src="../image_assets/gif1.gif" class="fire-gif" alt="Fire GIF 1">
+          <img src="../image_assets/gif1.gif" class="fire-gif" alt="Fire GIF 2">
+        </div>
+        <div class="fire-gifs right">
+          <img src="../image_assets/gif1.gif" class="fire-gif" alt="Fire GIF 3">
+          <img src="../image_assets/gif1.gif" class="fire-gif" alt="Fire GIF 4">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
